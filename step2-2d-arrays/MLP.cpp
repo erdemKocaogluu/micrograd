@@ -15,7 +15,15 @@ void MLP::hesapla (int inputNumber , double** in, double** & out ) {
         out = this->layers[i].hesapla(inputNumber,  in) ;
 
 
+
+
+
+
         if (i >= 1 ) {
+
+            for (int a = 0 ; a < inputNumber ; a++ ) {
+                delete[] in[a] ;
+            }
             delete[] in ;
         }
 
