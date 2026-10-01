@@ -448,7 +448,31 @@ int main() {
 
 
 
+        for (int i = 0 ; i < length ; i++ ) {
 
+
+
+            delete[] output[i] ;
+
+        }
+
+        delete[] output ;
+
+
+
+
+
+
+        for (int i = 0 ; i < length ; i++ ) {
+
+
+            
+
+            delete[] desiredOutput[i] ;
+
+        }
+
+        delete[] desiredOutput ;
 
 
 
@@ -469,7 +493,19 @@ int main() {
 
 
 
+    for (int i = 0 ; i < length ; i++ ) {
 
+        for (int a = 0 ; a < dimension ; a++ ) {
+
+            delete input[i][a] ;
+
+        }
+
+        delete[] input[i] ;
+
+    }
+
+    delete[] input ;
 
 
 

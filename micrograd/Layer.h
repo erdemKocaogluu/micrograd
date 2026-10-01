@@ -27,6 +27,12 @@ struct Neuron
 
     }
     ~Neuron(){
+
+        for (int i = 0 ; i < weightNumber ; i++ ) {
+            delete weights[i] ;
+        }
+
+        
         delete[] weights ; // şu [] kullanmayı unutma !
     }
 
